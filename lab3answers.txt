@@ -1,0 +1,15 @@
+Launching the Dangerous App from Launcher/Home screen does not work. 
+
+    <permission
+        android:name="course.labs.permissions.DANGEROUS_ACTIVITY_PERM"
+        android:protectionLevel="dangerous"/>
+
+        <activity
+            android:name=".DangerousActivity"
+            android:label="@string/app_name"
+            android:permission="course.labs.permissions.DANGEROUS_ACTIVITY_PERM" >
+
+By setting the custom permission with the name "course.labs.permissions.DANGEROUS_ACTIVITY_PERM" amd the protection type to "dangerous".
+The Dangeous App is being label as a dangerous application. However, by putting this line android:permission="course.labs.permissions.DANGEROUS_ACTIVITY_PERM" >, it prevent us from opening the Dangerous App.
+The only way to open the Dangerous App is by going thru PermissionLab App due to <uses-permission android:name="course.labs.permissions.DANGEROUS_ACTIVITY_PERM"/>.
+It give permission to open the Dangerous App.
